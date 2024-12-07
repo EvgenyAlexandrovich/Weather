@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <section id="mainSection" class="mainSection">
+            <form id="form" class="form">
+                <input
+                    id="searchCity"
+                    class="searchCity"
+                    type="text"
+                    placeholder="Aktobe"
+                />
+                <button class="searchBtn">
+                    <img src="assets/Shape.svg" />
+                </button>
+            </form>
+            <div class="secondSection">
+                <div id="weatherBlock" class="weatherBlock">
+                    <div class="temperatureDiv">
+                        <div class="temperature">
+                            <div id="lastRequestTemp" class="temperature">
+                                14°
+                            </div>
+                            <img
+                                id="imgCloud"
+                                class="imgApi"
+                                src="assets/icons8-rain-96 1.svg"
+                                alt=""
+                            />
+                        </div>
+                        <div class="sunriseSunset">
+                            <div id="feelsLike">Feels like: 10°</div>
+                            <div id="sunrise">Sunrise: 03:21</div>
+                            <div id="sunset">Sunset: 18:54</div>
+                        </div>
+                        <div class="sectionForestDay">
+                            <div class="blockForecastDay">
+                                <div class="elBlockForecast">12:00</div>
+                                <div class="forecastDay">
+                                    <div>
+                                        <div>Temperature: 13°</div>
+                                        <div>Feels like: 11°</div>
+                                    </div>
+                                    <div>
+                                        <img
+                                            src="assets/icons8-rain-96 1.svg"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blockForecastDay">
+                                <div class="elBlockForecast">15:00</div>
+                                <div class="forecastDay">
+                                    <div>
+                                        <div>Temperature: 11°</div>
+                                        <div>Feels like: 10°</div>
+                                    </div>
+                                    <img
+                                        src="assets/icons8-rain-96 1.svg"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                            <div class="blockForecastDay">
+                                <div class="elBlockForecast">18:00</div>
+                                <div class="forecastDay">
+                                    <div>
+                                        <div>Temperature: 11°</div>
+                                        <div>Feels like: 10°</div>
+                                    </div>
+                                    <img
+                                        src="assets/icons8-rain-96 1.svg"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="addFavorites">
+                        <div id="lastRequestWeather" class="favorites">
+                            Aktobe
+                        </div>
+                        <img
+                            id="favorites"
+                            class="favorites"
+                            src="assets/heart inactive.svg"
+                            alt=""
+                        />
+                    </div>
+                </div>
+                <div class="locationBlock">
+                    <div class="addLocations">
+                        <p>Favorites:</p>
+                    </div>
+                    <div class="locations">
+                        <ul id="listCities"></ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="main.js" type="module"></script>
+        <script src="ui.js" type="module"></script>
+        <script src="helpers.js" type="module"></script>
+        <script src="storage.js" type="module"></script>
+    </body>
+</html>
