@@ -9,7 +9,7 @@ const currentCity = storage.getCurrentCity();
 let favoriteCities = storage.getFavoriteCities();
 
 const fetchWeatherNow = (cityName) => {
-    const serverUrl = "http://api.openweathermap.org/data/2.5/weather";
+    const serverUrl = "https://api.openweathermap.org/data/2.5/weather";
     const url = `${serverUrl}?q=${cityName}&appid=${apiKey}&units=metric`;
     return fetch(url).then((response) => {
         if (response.status === 404) {
